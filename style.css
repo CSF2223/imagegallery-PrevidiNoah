@@ -8,9 +8,18 @@ tertiary color: #826F66
 @import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Open+Sans:ital,wght@1,500&display=swap');
 
 html {
-    
     font-size: 62.5%; /* Default font size is 16px -  62.5% of 16 is 10px  - 1 rem (relative unit) now will be equivalent to 10px} */
-    
+}
+header {
+    background-color: #3A3845;
+    margin: 0 4rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #826F66;
+    border-right:1px solid #826F66;
+    border-left:1px solid #826F66;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    border-radius: 30px;
 }
 body {
     margin: 0;
@@ -19,40 +28,64 @@ body {
     border-style: dashed;
     border: 10px lightgrey;
     font-size: 1.1rem;
+    text-align: justify;
 }
 h1 {
-    background-color: black;
+    background-color: #3A3845;
     margin: 15px;
     padding: 10px;
-    font-family: cursive;
-}
-    
-header {
-    background-color: white;
-    margin: 0 4rem;
-    padding: 0.5rem;
-    border-bottom: 1px solid #826F66;
-    border-right:1px solid #826F66;
-    border-left:1px solid #826F66;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
-    text-transform: uppercase;
+    font-family: fantasy;
+    flex-direction: column;
+    text-align: center;
 }
 h4 {
-    background-color: black;
+    background-color: #3A3845;
     margin: 15px;
     padding: 10px;
-    font-family: sans-serif;
+    font-family: fantasy;
+    flex-direction: column;
+    text-align: center;
 }
 h6 {
-    background-color: black;
+    background-color: #3A3845;
     margin: 15px;
     padding: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: fantasy;
+    flex-direction: column;
+    text-align: center;
 }
 .imageCard {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin: 7rem 4rem;
+    align-items: center;
+}
+.imageCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.imageCard a {
+    text-decoration: none;
+    color: #826F66;
+}
+.cardText  {
+    color: #C69B7B;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 30px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+cite {
+    font-size: 2rem;
+}
+p {
+    font-size: 1.2rem;
 }
